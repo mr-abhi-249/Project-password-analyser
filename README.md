@@ -399,7 +399,3 @@ Built as part of the **21 Days 21 Projects Challenge**.
 ```bash
 python backend/app.py
 ```
-
-Your original `password_analyzer.py` can remain in the project as the **CLI version**.
-
-This README now documents **both the original analyzer and the new web application** without losing the work you already did.
