@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🔐 Password Strength Analyzer</h1>
+
+            <p class="subtitle">
+                Check how strong and secure your password is.
+            </p>
+
+            <div class="input-group">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+
+                <button id="togglePassword">Show</button>
+
+            </div>
+
+            <button id="analyzeBtn" class="analyze-btn">
+                Analyze Password
+            </button>
+
+            <div id="result" class="result hidden">
+
+                <div class="strength-section">
+
+                    <h2 id="strengthText">Strength</h2>
+
+                    <div class="strength-bar">
+                        <div id="strengthFill"></div>
+                    </div>
+
+                </div>
+
+                <div class="details">
+
+                    <h3>Security Checklist</h3>
+
+                    <p id="length">❌ At least 8 characters</p>
+                    <p id="uppercase">❌ Uppercase letter</p>
+                    <p id="lowercase">❌ Lowercase letter</p>
+                    <p id="number">❌ Number</p>
+                    <p id="special">❌ Special character</p>
+                    <p id="common">❌ Not a common password</p>
+                    <p id="predictable">❌ Not predictable</p>
+                    <p id="repeated">❌ No repeated characters</p>
+
+                </div>
+
+                <div class="suggestions">
+
+                    <h3>💡 Suggestions</h3>
+
+                    <ul id="suggestionList"></ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
